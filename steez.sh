@@ -2,8 +2,6 @@
 #
 # Steez up that computer
 
-set -e
-
 source helpers.sh
 
 # Check to see that the installer will
@@ -59,7 +57,10 @@ fi
 steez_install \
     code \
     composer \
+    containerd.io \
     curl \
+    docker-ce \
+    docker-ce-cli \
     git \
     nodejs \
     php \

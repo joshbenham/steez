@@ -2,6 +2,16 @@
 #
 # Fedora repos
 
+
+SREPO=$(dnf repolist | grep 'Docker')
+
+if [[ ! $SREPO ]]; then
+    echo " * Repository: Docker Engine"
+
+    sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+fi
+
+
 SREPO=$(dnf repolist | grep 'sublime-text')
 
 if [[ ! $SREPO ]]; then
@@ -30,6 +40,5 @@ if [[ ! $SREPO ]]; then
     sudo dnf module reset php
 fi
 
+
 sudo dnf check-update
-
-
