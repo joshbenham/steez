@@ -58,8 +58,10 @@ fi
 # Install required applications
 steez_install \
     code \
+    composer \
     curl \
     git \
+    nodejs \
     php \
     sublime-text \
     vim
