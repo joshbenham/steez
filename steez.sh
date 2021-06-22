@@ -55,6 +55,7 @@ fi
 
 # Install required applications
 steez_install \
+    cascadia-code-pl-fonts \
     code \
     code-insiders \
     composer \
