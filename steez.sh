@@ -56,6 +56,7 @@ fi
 # Install required applications
 steez_install \
     code \
+    code-insiders \
     composer \
     containerd.io \
     curl \
