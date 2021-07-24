@@ -35,6 +35,7 @@ fi
 if [[ ! -d $HOME/.local/share/omf/themes/agnoster ]]; then
     echo "Installing Agnoster OMF Theme"
     fish -c "omf install agnoster"
+    fish -c "omf install fzf"
 fi
 
 # Check to see if shell is Fish 
@@ -66,6 +67,7 @@ steez_install \
     docker-ce \
     docker-ce-cli \
     docker-compose \
+    fzf \
     git \
     nodejs \
     php \
